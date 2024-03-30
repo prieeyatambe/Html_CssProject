@@ -1,0 +1,86 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    justify-content: center;
+    margin: 4cqmax 20cqmax;
+}
+
+input[type=text],
+[type=email],
+[type=date],
+[type=time] {
+    border: none;
+    border-bottom: 2px solid rgb(89, 84, 84);
+    padding: 5px;
+}
+
+input[placeholder] {
+    font-size: 1svw;
+}
+
+#r1,
+#r2 {
+    accent-color: rgb(49, 98, 245);
+}
+
+.main {
+    height: 625px;
+    width: 900px;
+    border: 2px solid gainsboro;
+    box-shadow: 5px 5px 5px 5px rgb(187, 180, 180);
+    border-radius: 6px;
+}
+
+.image-div {
+    width: 400px;
+    height: 600px;
+    background-size: cover;
+    background-image: url("/Images/Lab-Test/lab-test.jpg");
+    background-repeat: no-repeat;
+    padding: 12px;
+}
+
+.form-div {
+    margin: 10px;
+    padding: 10px;
+    line-height: 1.5cm;
+    overflow-y: auto;
+    width: 500px;
+    scroll-behavior: smooth;
+}
+
+.container {
+    scrollbar-width: 2px;
+    scroll-snap-type: y mandatory;
+    height: 500px;
+    display: contents;
+}
+
+.main>.container {
+    display: inline-flex;
+    width: 900px;
+}
+
+.btn-class {
+    display: inline-block;
+    background-color: rgb(162, 104, 216);
+    font-size: 1.2em;
+    border: 3px inset rgb(111, 41, 116);
+    color: white;
+    border-radius: 5px;
+    position: sticky;
+    z-index: 100%;
+}
+
+.btn-class:hover {
+    display: inline-block;
+    background-color: rgb(230, 205, 252);
+    font-size: 1.2em;
+    border: 3px inset rgb(136, 55, 142);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    position: sticky;
+    z-index: 100%;
+}

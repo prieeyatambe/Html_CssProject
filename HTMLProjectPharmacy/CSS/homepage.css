@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.header1 {
+  font-size: xx-large;
+  text-align: center;
+  width: 90rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  left: 0;
+  top: 0;
+  position: sticky;
+  padding: 1vw;
+  background-color: rgb(31, 30, 30);
+  color: white;
+  z-index: 0;
+  font-weight: bolder;
+  background-image: linear-gradient(to right, rgb(16, 16, 16), rgb(212, 205, 209), rgb(224, 41, 102));
+}
+
+.h1-class {
+  font-size: 4vw;
+  font-family: 'Artifika';
+  color: rgb(77, 75, 75);
+  text-shadow: 0px 3px 3px gray;
+}
+
+.footer1 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 91rem;
+  font-size: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Nav Bar */
+
+.nav {
+  position: fixed;
+  display: flex;
+  color: rgb(5, 5, 5);
+  z-index: 1;
+  height: 50px;
+  padding-left: 22px;
+  background-color: rgb(110, 107, 107);
+  margin-top: 0%;
+  width: 90.5rem;
+}
+
+nav .dropdown>.dropdown-btn {
+  padding-top: 2%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-btn {
+  background-color: rgb(110, 107, 107);
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-btn:hover {
+  background-color: rgb(138, 134, 134);
+}
+
+/* Cards */
+.card-container {
+  margin-left: 4%;
+}
+
+.cards {
+  display: flex;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(65, 64, 64, 0.61);
+  transition: 0.3s;
+  width: 25%;
+  height: 70%;
+  border: 0px solid black;
+  padding: 15px;
+  margin-top: 5%;
+  margin-right: 5%;
+  background-color: rgb(202, 233, 245);
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(231, 120, 120, 0.884);
+  background-color: rgb(157, 225, 107);
+  height: 70%;
+  padding: 2% 2% 2% 2%;
+}
+
+.container1 {
+  margin-top: 5px;
+  padding: 5%;
+
+}
+
+.card-btn {
+  width: 100%;
+  font-size: large;
+  margin-top: 5px;
+  color: crimson;
+  font-weight: bold;
+  border: 2px solid rgb(243, 119, 105);
+  border-radius: 5px;
+}
+
+.card-btn:hover {
+  background-color: rgb(163, 157, 157);
+  border: 2px solid rgb(0, 255, 76);
+  border-radius: 5px;
+  color: blue;
+  box-shadow: 0px 5px 8px 0px rgb(30, 26, 58);
+}
+
+.image-div {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Animation */
+.container {
+  width: 82rem;
+  height: 30rem;
+  margin: 5% 3% 5% 5%;
+  border: 0.7vw inset rgba(164, 168, 165, 0.564);
+  border-radius: 7px;
+}
+
+.animate-div {
+  width: 82rem;
+  height: 30rem;
+  animation-duration: 10s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate-reverse;
+  animation-name: changeImage;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeImage {
+  0% {
+    background-image: url("/Images/Animation/ani1.jpg");
+    background-size: cover;
+  }
+
+  25% {
+    background-image: url("/Images/Animation/ani2.png");
+    background-size: cover;
+  }
+
+  50% {
+    background-image: url("/Images/Animation/ani3.jpg");
+    background-size: cover;
+  }
+
+  75% {
+    background-image: url("/Images/Animation/ani4.jpg");
+    background-size: cover;
+  }
+
+  100% {
+    background-image: url("/Images/Animation/ani5.jpg");
+    background-size: cover;
+  }
+}
